@@ -1,0 +1,15 @@
+@import '../base/_variables';
+
+.list-card {
+  > li {
+    width: 25%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 1px;
+    margin-bottom: 20px;
+  }
+}
+
+@import './_list-tablet';
+@import './_list-mobile';

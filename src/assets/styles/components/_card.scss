@@ -1,0 +1,76 @@
+@import '../base/_variables';
+
+%card-label {
+  color: $white;
+  background-color: $red-label;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.card {
+  font-size: 14px;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.07);
+
+  .card-image {
+    position: relative;
+    height: 120px;
+    background-image: url('/src/assets/images/new-york.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card-marker {
+      @extend %card-label;
+      padding: 10px;
+      border-radius: 50%;
+      top: 15px;
+      right: 15px;
+      text-align: center;
+    }
+
+    .card-type {
+      @extend %card-label;
+      padding: 5px 10px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .card-content {
+    padding: 20px;
+    
+    .card-title {
+      margin: 0;
+    }
+
+    .card-subtitle {
+      color: $red-subtitle;
+      font-weight: 400;
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+.card-marker > span {
+  display: block;
+
+  &:last-child {
+    font-size: 12px;
+  }
+}
+
+.card-content-footer {
+  color: $gray-9b;
+  font-size: 12px;
+
+  > span:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  i {
+    margin-right: 3px;
+  }
+}
+
+@import './_card-tablet';
+@import './_card-mobile';
