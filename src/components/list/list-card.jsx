@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import Card from 'components/shared/card';
 require('assets/styles/components/_list.scss');
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 require('assets/styles/components/_card.scss');
 
 class Card extends Component {
